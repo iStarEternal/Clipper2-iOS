@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.3'
+
+target 'Clipper2-iOS_Example' do
+  pod 'Clipper2-iOS', :path => '../'
+
+  target 'Clipper2-iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

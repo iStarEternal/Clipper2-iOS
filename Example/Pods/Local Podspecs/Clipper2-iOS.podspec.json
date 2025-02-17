@@ -1,0 +1,36 @@
+{
+  "name": "Clipper2-iOS",
+  "version": "0.1.0",
+  "summary": "A short description of Clipper2-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hyh/Clipper2-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hyh": "576681253@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/hyh/Clipper2-iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "public_header_files": "Classes/**/*.h",
+  "source_files": [
+    "Clipper2-iOS/Classes/**/*",
+    "Clipper2-iOS/Libs/Clipper2Lib/**/*",
+    "Clipper2-iOS/Tmp/**/*"
+  ],
+  "private_header_files": [
+    "Clipper2-iOS/Libs/Clipper2Lib/**/*.h"
+  ],
+  "compiler_flags": "-std=c++17",
+  "pod_target_xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "compiler-default",
+    "CLANG_CXX_LIBRARY": "libc++",
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

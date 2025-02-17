@@ -1,0 +1,16 @@
+PODS:
+  - Clipper2-iOS (0.1.0)
+
+DEPENDENCIES:
+  - Clipper2-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  Clipper2-iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Clipper2-iOS: 50688ae63130c48047d7bcbeef3a8301521fee5f
+
+PODFILE CHECKSUM: 621410a6a46516d14a897b8c98dcc3d7fbf1ffb0
+
+COCOAPODS: 1.16.2

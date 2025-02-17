@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1754B691220F02D8BA79FCE03B70FBD0 /* clipper.core.h in Headers */ = {isa = PBXBuildFile; fileRef = 25FEFF56DC3C22BE768D4EA39BDE2DA5 /* clipper.core.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		185C78A060DC268D05E1DEC4AE7295EB /* clipper.offset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3802DFD12675E49F4F64FC6579142EF9 /* clipper.offset.cpp */; settings = {COMPILER_FLAGS = "-std=c++17"; }; };
+		33917182AD7008A8007D5259C8AAE8F4 /* clipper.rectclip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A48AE9D7DB19C00A3BF7D69DA2DD24B /* clipper.rectclip.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		38E3C599E93CDA99CF3E525537270E8C /* clipper.minkowski.h in Headers */ = {isa = PBXBuildFile; fileRef = AE012850CFC7F971B9419FC8EA47A3BC /* clipper.minkowski.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		445B2AE808B439DA6C25F40A785129E4 /* Clipper2Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4AF62734E6A0758DDD339ED936D7581C /* Clipper2Wrapper.mm */; settings = {COMPILER_FLAGS = "-std=c++17"; }; };
+		57EFC8156E2FDB06AF28080DDE41A12A /* clipper.engine.h in Headers */ = {isa = PBXBuildFile; fileRef = A489C1A2940D095534F223D789F57382 /* clipper.engine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		58D55123669868905B9B31EDB7D58809 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A2364F9290974B68EDA1F7A638703 /* ReplaceMe.swift */; settings = {COMPILER_FLAGS = "-std=c++17"; }; };
+		5B18FAD55006659391198D5AF3510A9A /* Pods-Clipper2-iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE6460C9E82F671FD2A9F4EEBA3AB /* Pods-Clipper2-iOS_Example-dummy.m */; };
+		62E8C119398853FA557C734D7E207B98 /* Pods-Clipper2-iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5D29E2300F6AA4CD0A390067A4317 /* Pods-Clipper2-iOS_Tests-dummy.m */; };
+		65FB1331033C08610EA86F7E93307AC7 /* clipper.offset.h in Headers */ = {isa = PBXBuildFile; fileRef = E65AAEE869D8867E0EB94C1BDDE1A57E /* clipper.offset.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6A8BD8B1A1D4CD607731A6BB65074173 /* Clipper2-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C23F837FDD59FAA0A9FEAEEF8BB7F0FB /* Clipper2-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A913E15D8A439086DE7E97FB50067E6 /* clipper.engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1B661D6A8E532AC92DA0F46C47F88 /* clipper.engine.cpp */; settings = {COMPILER_FLAGS = "-std=c++17"; }; };
+		6E2CA9FA95ACFA337B93C4123E362D56 /* clipper.rectclip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1487DB694EEB0BEA35F1F011FF1BBBF3 /* clipper.rectclip.cpp */; settings = {COMPILER_FLAGS = "-std=c++17"; }; };
+		76D7E9DF25588767124E473BCC0383E4 /* Clipper2-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2F6F0BAC204BEAFCB3CD52FAF8CDE5 /* Clipper2-iOS-dummy.m */; };
+		7A4BE558F790A199EB9C897DD68E4858 /* Pods-Clipper2-iOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F38E2210BAB88887FBE59046464D31 /* Pods-Clipper2-iOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85D25A0278130D15C35A6408C7725A70 /* clipper.export.h in Headers */ = {isa = PBXBuildFile; fileRef = 463745815CCA23050D93AB6A4979879E /* clipper.export.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B4D8638981AA181B1DFBE6EE985E7760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		B5D944067149EDE1A25882ED34876B7E /* clipper.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C7527374BF86238DCAB617C527261E /* clipper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C3538245B57F6AE0FCCA8165F9D36166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		DCE594414E020CFCEEE26F962A6119FA /* Pods-Clipper2-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D44FFF712DB2D301403E111DFF99342A /* Pods-Clipper2-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEFB7FFC02AFE7E348D28A5B8BD109D4 /* clipper.version.h in Headers */ = {isa = PBXBuildFile; fileRef = 361C2E97F4E49EFC6797EF1337C05F58 /* clipper.version.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8DB85AB531C5A8AF45A97FD0A345928 /* Clipper2Wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 883E1ADEAC807A65CF3E3EB81359F146 /* Clipper2Wrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2A1D1FDBE0055211493EEDB58A8BFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10B165963F58770E0248B8CC1C3109A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E1070CDD18ABA18538AE7A79D949F6B;
+			remoteInfo = "Clipper2-iOS";
+		};
+		E8C951B54EE746A96EA23141F0343662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EB9B82FDC6C77BF906FC904D62EE6A;
+			remoteInfo = "Pods-Clipper2-iOS_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		094F157C939DA20DC83CA760669C01E0 /* Clipper2-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Clipper2-iOS-Info.plist"; sourceTree = "<group>"; };
+		0D8E281FF32FB078C456D5B425003C00 /* Pods-Clipper2-iOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Clipper2-iOS_Tests"; path = Pods_Clipper2_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1487DB694EEB0BEA35F1F011FF1BBBF3 /* clipper.rectclip.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = clipper.rectclip.cpp; sourceTree = "<group>"; };
+		1A48AE9D7DB19C00A3BF7D69DA2DD24B /* clipper.rectclip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.rectclip.h; sourceTree = "<group>"; };
+		22710345A528D1F47E9E53686626F495 /* Pods-Clipper2-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clipper2-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		25FEFF56DC3C22BE768D4EA39BDE2DA5 /* clipper.core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.core.h; sourceTree = "<group>"; };
+		28E646FBE78588CE173AA6E391C64551 /* Clipper2-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Clipper2-iOS.modulemap"; sourceTree = "<group>"; };
+		2DD1B661D6A8E532AC92DA0F46C47F88 /* clipper.engine.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = clipper.engine.cpp; sourceTree = "<group>"; };
+		346990B42212008D8A2F594445022B94 /* Pods-Clipper2-iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clipper2-iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		361C2E97F4E49EFC6797EF1337C05F58 /* clipper.version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.version.h; sourceTree = "<group>"; };
+		3802DFD12675E49F4F64FC6579142EF9 /* clipper.offset.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = clipper.offset.cpp; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39C7527374BF86238DCAB617C527261E /* clipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.h; sourceTree = "<group>"; };
+		3B1D4332ED502F0A7B4CE1D5200453E9 /* Pods-Clipper2-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipper2-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		463745815CCA23050D93AB6A4979879E /* clipper.export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.export.h; sourceTree = "<group>"; };
+		4AF62734E6A0758DDD339ED936D7581C /* Clipper2Wrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = Clipper2Wrapper.mm; sourceTree = "<group>"; };
+		5773469E81F5E7192F9C8B9C6DCD9F78 /* Pods-Clipper2-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipper2-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B9F71976992CB18DEC08DA6808B6308 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5D19B6A2FC988A3D6BC14F3D3A4173D7 /* Pods-Clipper2-iOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clipper2-iOS_Tests-Info.plist"; sourceTree = "<group>"; };
+		64D08282CD6724EDF0FFFFD5FD489169 /* Clipper2-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Clipper2-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		664F99D8030BC5D4531CD56905A3BB4D /* Pods-Clipper2-iOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Clipper2-iOS_Example"; path = Pods_Clipper2_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D40569928718A20B65DDE60B23DF36B /* Clipper2-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Clipper2-iOS"; path = Clipper2_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70860D54C9107D16F260995E20A0E34A /* Clipper2-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clipper2-iOS-prefix.pch"; sourceTree = "<group>"; };
+		74D8B34DE3FFB031593EF9120BC11AD6 /* Pods-Clipper2-iOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clipper2-iOS_Example-Info.plist"; sourceTree = "<group>"; };
+		85F8C21FAF6305529D502FD7914C0216 /* Pods-Clipper2-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clipper2-iOS_Example.modulemap"; sourceTree = "<group>"; };
+		883E1ADEAC807A65CF3E3EB81359F146 /* Clipper2Wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Clipper2Wrapper.h; sourceTree = "<group>"; };
+		8BACE6460C9E82F671FD2A9F4EEBA3AB /* Pods-Clipper2-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clipper2-iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		8EA97C33A274BA2297CDE4FB055CDE43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		97BB56C108397C864C5690C348A7CC0F /* Pods-Clipper2-iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clipper2-iOS_Tests.modulemap"; sourceTree = "<group>"; };
+		9BC64CE036A183F9D7B09FD623201F6B /* Pods-Clipper2-iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clipper2-iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD5D29E2300F6AA4CD0A390067A4317 /* Pods-Clipper2-iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clipper2-iOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		A489C1A2940D095534F223D789F57382 /* clipper.engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.engine.h; sourceTree = "<group>"; };
+		AE012850CFC7F971B9419FC8EA47A3BC /* clipper.minkowski.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.minkowski.h; sourceTree = "<group>"; };
+		B5F38E2210BAB88887FBE59046464D31 /* Pods-Clipper2-iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clipper2-iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BD555C01B268CB9AE522C9EBA068F363 /* Clipper2-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Clipper2-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C19398B300CCA39A4E159C82E08D6EF0 /* Pods-Clipper2-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipper2-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C23F837FDD59FAA0A9FEAEEF8BB7F0FB /* Clipper2-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clipper2-iOS-umbrella.h"; sourceTree = "<group>"; };
+		C33A2364F9290974B68EDA1F7A638703 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		CB139700D936483FF6162349D33E97F4 /* Pods-Clipper2-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clipper2-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D44FFF712DB2D301403E111DFF99342A /* Pods-Clipper2-iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clipper2-iOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		D88A7D98501B0E4E7B2425FFF684B974 /* Pods-Clipper2-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clipper2-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4E8AB2B4EBCCE9D2AEE424CD2AF9F95 /* Clipper2-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Clipper2-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E65AAEE869D8867E0EB94C1BDDE1A57E /* clipper.offset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = clipper.offset.h; sourceTree = "<group>"; };
+		EC2F6F0BAC204BEAFCB3CD52FAF8CDE5 /* Clipper2-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Clipper2-iOS-dummy.m"; sourceTree = "<group>"; };
+		F606CE3E797E55F0407AFFD5903AB58E /* Pods-Clipper2-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipper2-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0326B94EBA5242EC26CEE87F603EB4C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3538245B57F6AE0FCCA8165F9D36166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBE7F27562B3CEF427573E3EB7C5A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A1D1FDBE0055211493EEDB58A8BFF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5CDD25F54D0FCB68BEE4B2E28F616D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D8638981AA181B1DFBE6EE985E7760 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		110C757BC24495E7B592D94D050350D2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61D78B401CE3828BF070806A2C92936B /* Clipper2-iOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2BABFA9FEA481B0D6EBF94671634141A /* clipper2 */ = {
+			isa = PBXGroup;
+			children = (
+				39C7527374BF86238DCAB617C527261E /* clipper.h */,
+				25FEFF56DC3C22BE768D4EA39BDE2DA5 /* clipper.core.h */,
+				A489C1A2940D095534F223D789F57382 /* clipper.engine.h */,
+				463745815CCA23050D93AB6A4979879E /* clipper.export.h */,
+				AE012850CFC7F971B9419FC8EA47A3BC /* clipper.minkowski.h */,
+				E65AAEE869D8867E0EB94C1BDDE1A57E /* clipper.offset.h */,
+				1A48AE9D7DB19C00A3BF7D69DA2DD24B /* clipper.rectclip.h */,
+				361C2E97F4E49EFC6797EF1337C05F58 /* clipper.version.h */,
+			);
+			name = clipper2;
+			path = clipper2;
+			sourceTree = "<group>";
+		};
+		301B3B154BAF1262EC54B4BD5D88D713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D40569928718A20B65DDE60B23DF36B /* Clipper2-iOS */,
+				664F99D8030BC5D4531CD56905A3BB4D /* Pods-Clipper2-iOS_Example */,
+				0D8E281FF32FB078C456D5B425003C00 /* Pods-Clipper2-iOS_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F9EC0FF7746DD90B87DDCCBD90D0122 /* Pods-Clipper2-iOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				85F8C21FAF6305529D502FD7914C0216 /* Pods-Clipper2-iOS_Example.modulemap */,
+				CB139700D936483FF6162349D33E97F4 /* Pods-Clipper2-iOS_Example-acknowledgements.markdown */,
+				D88A7D98501B0E4E7B2425FFF684B974 /* Pods-Clipper2-iOS_Example-acknowledgements.plist */,
+				8BACE6460C9E82F671FD2A9F4EEBA3AB /* Pods-Clipper2-iOS_Example-dummy.m */,
+				22710345A528D1F47E9E53686626F495 /* Pods-Clipper2-iOS_Example-frameworks.sh */,
+				74D8B34DE3FFB031593EF9120BC11AD6 /* Pods-Clipper2-iOS_Example-Info.plist */,
+				D44FFF712DB2D301403E111DFF99342A /* Pods-Clipper2-iOS_Example-umbrella.h */,
+				3B1D4332ED502F0A7B4CE1D5200453E9 /* Pods-Clipper2-iOS_Example.debug.xcconfig */,
+				C19398B300CCA39A4E159C82E08D6EF0 /* Pods-Clipper2-iOS_Example.release.xcconfig */,
+			);
+			name = "Pods-Clipper2-iOS_Example";
+			path = "Target Support Files/Pods-Clipper2-iOS_Example";
+			sourceTree = "<group>";
+		};
+		5A855C68021BD78D85BCDB340AACE568 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2DD1B661D6A8E532AC92DA0F46C47F88 /* clipper.engine.cpp */,
+				3802DFD12675E49F4F64FC6579142EF9 /* clipper.offset.cpp */,
+				1487DB694EEB0BEA35F1F011FF1BBBF3 /* clipper.rectclip.cpp */,
+			);
+			name = src;
+			path = src;
+			sourceTree = "<group>";
+		};
+		5E00AFD6579858B3E32F47A3D7FCCCEF /* Pods-Clipper2-iOS_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				97BB56C108397C864C5690C348A7CC0F /* Pods-Clipper2-iOS_Tests.modulemap */,
+				9BC64CE036A183F9D7B09FD623201F6B /* Pods-Clipper2-iOS_Tests-acknowledgements.markdown */,
+				346990B42212008D8A2F594445022B94 /* Pods-Clipper2-iOS_Tests-acknowledgements.plist */,
+				9FD5D29E2300F6AA4CD0A390067A4317 /* Pods-Clipper2-iOS_Tests-dummy.m */,
+				5D19B6A2FC988A3D6BC14F3D3A4173D7 /* Pods-Clipper2-iOS_Tests-Info.plist */,
+				B5F38E2210BAB88887FBE59046464D31 /* Pods-Clipper2-iOS_Tests-umbrella.h */,
+				5773469E81F5E7192F9C8B9C6DCD9F78 /* Pods-Clipper2-iOS_Tests.debug.xcconfig */,
+				F606CE3E797E55F0407AFFD5903AB58E /* Pods-Clipper2-iOS_Tests.release.xcconfig */,
+			);
+			name = "Pods-Clipper2-iOS_Tests";
+			path = "Target Support Files/Pods-Clipper2-iOS_Tests";
+			sourceTree = "<group>";
+		};
+		61D78B401CE3828BF070806A2C92936B /* Clipper2-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AAE01676478F03AACFD4577FC01CB553 /* Classes */,
+				EE24C1DDF37ED6118C02EA0FEC148970 /* Libs */,
+				C5E4C7A9709DF2B03D297D583ECA1DD9 /* Pod */,
+				C9C6C0C3943954E1676235A4B75267CB /* Support Files */,
+			);
+			name = "Clipper2-iOS";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		77C0FEB006B60EA0F2D0E5DDB6B535DC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F9EC0FF7746DD90B87DDCCBD90D0122 /* Pods-Clipper2-iOS_Example */,
+				5E00AFD6579858B3E32F47A3D7FCCCEF /* Pods-Clipper2-iOS_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AAE01676478F03AACFD4577FC01CB553 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				883E1ADEAC807A65CF3E3EB81359F146 /* Clipper2Wrapper.h */,
+				4AF62734E6A0758DDD339ED936D7581C /* Clipper2Wrapper.mm */,
+				C33A2364F9290974B68EDA1F7A638703 /* ReplaceMe.swift */,
+			);
+			name = Classes;
+			path = "Clipper2-iOS/Classes";
+			sourceTree = "<group>";
+		};
+		B116F8F319C60AEADC9439E0AAC22581 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2BABFA9FEA481B0D6EBF94671634141A /* clipper2 */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
+		C5E4C7A9709DF2B03D297D583ECA1DD9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E4E8AB2B4EBCCE9D2AEE424CD2AF9F95 /* Clipper2-iOS.podspec */,
+				5B9F71976992CB18DEC08DA6808B6308 /* LICENSE */,
+				8EA97C33A274BA2297CDE4FB055CDE43 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C9C6C0C3943954E1676235A4B75267CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28E646FBE78588CE173AA6E391C64551 /* Clipper2-iOS.modulemap */,
+				EC2F6F0BAC204BEAFCB3CD52FAF8CDE5 /* Clipper2-iOS-dummy.m */,
+				094F157C939DA20DC83CA760669C01E0 /* Clipper2-iOS-Info.plist */,
+				70860D54C9107D16F260995E20A0E34A /* Clipper2-iOS-prefix.pch */,
+				C23F837FDD59FAA0A9FEAEEF8BB7F0FB /* Clipper2-iOS-umbrella.h */,
+				BD555C01B268CB9AE522C9EBA068F363 /* Clipper2-iOS.debug.xcconfig */,
+				64D08282CD6724EDF0FFFFD5FD489169 /* Clipper2-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Clipper2-iOS";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				110C757BC24495E7B592D94D050350D2 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				301B3B154BAF1262EC54B4BD5D88D713 /* Products */,
+				77C0FEB006B60EA0F2D0E5DDB6B535DC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D07FCC96C885898F4EED68DF6D67BC4F /* Clipper2Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B116F8F319C60AEADC9439E0AAC22581 /* include */,
+				5A855C68021BD78D85BCDB340AACE568 /* src */,
+			);
+			name = Clipper2Lib;
+			path = Clipper2Lib;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE24C1DDF37ED6118C02EA0FEC148970 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				D07FCC96C885898F4EED68DF6D67BC4F /* Clipper2Lib */,
+			);
+			name = Libs;
+			path = "Clipper2-iOS/Libs";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		46E2A9083E5A9A692BCC3174A01970D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D944067149EDE1A25882ED34876B7E /* clipper.h in Headers */,
+				1754B691220F02D8BA79FCE03B70FBD0 /* clipper.core.h in Headers */,
+				57EFC8156E2FDB06AF28080DDE41A12A /* clipper.engine.h in Headers */,
+				85D25A0278130D15C35A6408C7725A70 /* clipper.export.h in Headers */,
+				38E3C599E93CDA99CF3E525537270E8C /* clipper.minkowski.h in Headers */,
+				65FB1331033C08610EA86F7E93307AC7 /* clipper.offset.h in Headers */,
+				33917182AD7008A8007D5259C8AAE8F4 /* clipper.rectclip.h in Headers */,
+				DEFB7FFC02AFE7E348D28A5B8BD109D4 /* clipper.version.h in Headers */,
+				6A8BD8B1A1D4CD607731A6BB65074173 /* Clipper2-iOS-umbrella.h in Headers */,
+				E8DB85AB531C5A8AF45A97FD0A345928 /* Clipper2Wrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		999AB117DBA83040FF3B518115A3BD98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE594414E020CFCEEE26F962A6119FA /* Pods-Clipper2-iOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86BAC3320C057A5C8FBA27124F2BFF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4BE558F790A199EB9C897DD68E4858 /* Pods-Clipper2-iOS_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E1070CDD18ABA18538AE7A79D949F6B /* Clipper2-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9A4676230AB57AA18A586452EBADFD /* Build configuration list for PBXNativeTarget "Clipper2-iOS" */;
+			buildPhases = (
+				46E2A9083E5A9A692BCC3174A01970D7 /* Headers */,
+				8CF3E74FFA7B21DDA98C24658AB452DE /* Sources */,
+				FA5CDD25F54D0FCB68BEE4B2E28F616D /* Frameworks */,
+				48571D1BD96F03DFB7DF3B04635F7E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clipper2-iOS";
+			productName = Clipper2_iOS;
+			productReference = 6D40569928718A20B65DDE60B23DF36B /* Clipper2-iOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		30EB9B82FDC6C77BF906FC904D62EE6A /* Pods-Clipper2-iOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF80A9C81FE3BCC42E5F37AD77A0B8F1 /* Build configuration list for PBXNativeTarget "Pods-Clipper2-iOS_Example" */;
+			buildPhases = (
+				999AB117DBA83040FF3B518115A3BD98 /* Headers */,
+				F90C22B23AD89B62DFFAF099AAE9C96F /* Sources */,
+				6FBE7F27562B3CEF427573E3EB7C5A08 /* Frameworks */,
+				67DE2FF4D1F1C6D3D0D73BC92D40436C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4311D3CF6F350978FDE68B49ABFFD23 /* PBXTargetDependency */,
+			);
+			name = "Pods-Clipper2-iOS_Example";
+			productName = Pods_Clipper2_iOS_Example;
+			productReference = 664F99D8030BC5D4531CD56905A3BB4D /* Pods-Clipper2-iOS_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD6B7DDA9C7D5EE43EDFDE6AF039C2E9 /* Pods-Clipper2-iOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8E695F4D13489CB8332CB563E48628 /* Build configuration list for PBXNativeTarget "Pods-Clipper2-iOS_Tests" */;
+			buildPhases = (
+				B86BAC3320C057A5C8FBA27124F2BFF4 /* Headers */,
+				3BC2CD5C61F7D44F88FBE3078D167559 /* Sources */,
+				0326B94EBA5242EC26CEE87F603EB4C2 /* Frameworks */,
+				438A0329F6B5357E27261238C77491DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0FAEDFA18B8D07FAE6CE2CDE4F9EE5A /* PBXTargetDependency */,
+			);
+			name = "Pods-Clipper2-iOS_Tests";
+			productName = Pods_Clipper2_iOS_Tests;
+			productReference = 0D8E281FF32FB078C456D5B425003C00 /* Pods-Clipper2-iOS_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 301B3B154BAF1262EC54B4BD5D88D713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E1070CDD18ABA18538AE7A79D949F6B /* Clipper2-iOS */,
+				30EB9B82FDC6C77BF906FC904D62EE6A /* Pods-Clipper2-iOS_Example */,
+				AD6B7DDA9C7D5EE43EDFDE6AF039C2E9 /* Pods-Clipper2-iOS_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438A0329F6B5357E27261238C77491DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48571D1BD96F03DFB7DF3B04635F7E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DE2FF4D1F1C6D3D0D73BC92D40436C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC2CD5C61F7D44F88FBE3078D167559 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E8C119398853FA557C734D7E207B98 /* Pods-Clipper2-iOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF3E74FFA7B21DDA98C24658AB452DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A913E15D8A439086DE7E97FB50067E6 /* clipper.engine.cpp in Sources */,
+				185C78A060DC268D05E1DEC4AE7295EB /* clipper.offset.cpp in Sources */,
+				6E2CA9FA95ACFA337B93C4123E362D56 /* clipper.rectclip.cpp in Sources */,
+				76D7E9DF25588767124E473BCC0383E4 /* Clipper2-iOS-dummy.m in Sources */,
+				445B2AE808B439DA6C25F40A785129E4 /* Clipper2Wrapper.mm in Sources */,
+				58D55123669868905B9B31EDB7D58809 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90C22B23AD89B62DFFAF099AAE9C96F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B18FAD55006659391198D5AF3510A9A /* Pods-Clipper2-iOS_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0FAEDFA18B8D07FAE6CE2CDE4F9EE5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Clipper2-iOS_Example";
+			target = 30EB9B82FDC6C77BF906FC904D62EE6A /* Pods-Clipper2-iOS_Example */;
+			targetProxy = E8C951B54EE746A96EA23141F0343662 /* PBXContainerItemProxy */;
+		};
+		D4311D3CF6F350978FDE68B49ABFFD23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Clipper2-iOS";
+			target = 1E1070CDD18ABA18538AE7A79D949F6B /* Clipper2-iOS */;
+			targetProxy = 10B165963F58770E0248B8CC1C3109A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		431BA2B8298F0EE71735B9E0114E1955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		79759604D78320E712558F49DF19AA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7A7C14947060D219B319E81DE60F1CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD555C01B268CB9AE522C9EBA068F363 /* Clipper2-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Clipper2-iOS/Clipper2-iOS-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Clipper2-iOS/Clipper2-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Clipper2-iOS/Clipper2-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Clipper2_iOS;
+				PRODUCT_NAME = Clipper2_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		846D757FC3F42FF9FED74AAD034F6E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1D4332ED502F0A7B4CE1D5200453E9 /* Pods-Clipper2-iOS_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clipper2-iOS_Example/Pods-Clipper2-iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clipper2-iOS_Example/Pods-Clipper2-iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A07FD8A5F44E8DED5B363335C6DBF0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D08282CD6724EDF0FFFFD5FD489169 /* Clipper2-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Clipper2-iOS/Clipper2-iOS-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Clipper2-iOS/Clipper2-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Clipper2-iOS/Clipper2-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Clipper2_iOS;
+				PRODUCT_NAME = Clipper2_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA8BE1999B6859F57370C84641605E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19398B300CCA39A4E159C82E08D6EF0 /* Pods-Clipper2-iOS_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clipper2-iOS_Example/Pods-Clipper2-iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clipper2-iOS_Example/Pods-Clipper2-iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8E8CC4A88969B1F3CD948B8A83E2D7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F606CE3E797E55F0407AFFD5903AB58E /* Pods-Clipper2-iOS_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clipper2-iOS_Tests/Pods-Clipper2-iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clipper2-iOS_Tests/Pods-Clipper2-iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB6E995D37F23E5F2E5D0F6CDD1F62B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5773469E81F5E7192F9C8B9C6DCD9F78 /* Pods-Clipper2-iOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clipper2-iOS_Tests/Pods-Clipper2-iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clipper2-iOS_Tests/Pods-Clipper2-iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79759604D78320E712558F49DF19AA9F /* Debug */,
+				431BA2B8298F0EE71735B9E0114E1955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8E695F4D13489CB8332CB563E48628 /* Build configuration list for PBXNativeTarget "Pods-Clipper2-iOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6E995D37F23E5F2E5D0F6CDD1F62B8 /* Debug */,
+				D8E8CC4A88969B1F3CD948B8A83E2D7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF80A9C81FE3BCC42E5F37AD77A0B8F1 /* Build configuration list for PBXNativeTarget "Pods-Clipper2-iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846D757FC3F42FF9FED74AAD034F6E55 /* Debug */,
+				BA8BE1999B6859F57370C84641605E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA9A4676230AB57AA18A586452EBADFD /* Build configuration list for PBXNativeTarget "Clipper2-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7C14947060D219B319E81DE60F1CD1 /* Debug */,
+				A07FD8A5F44E8DED5B363335C6DBF0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

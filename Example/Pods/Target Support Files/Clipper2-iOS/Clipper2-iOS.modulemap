@@ -1,0 +1,6 @@
+framework module Clipper2_iOS {
+  umbrella header "Clipper2-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
